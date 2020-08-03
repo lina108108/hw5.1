@@ -18,7 +18,6 @@ import static ru.netology.web.DataGenerator.*;
 
 public class FormTest {
 
-
     private String City = getCity();
     private String Date = getRelevantDate(5);
     private String OtherDate = getRelevantDate(10);
@@ -35,7 +34,6 @@ public class FormTest {
     static void tearDownAll() {
         SelenideLogger.removeListener("allure");
     }
-
 
     @Test
     void shouldSubmitRequest() {
@@ -102,6 +100,4 @@ public class FormTest {
         form.$(byText("Запланировать")).click();
         $(byText("Заказ на выбранную дату невозможен")).waitUntil(Condition.visible, 15000);
     }
-
-
 }
