@@ -35,7 +35,6 @@ public class DataGenerator {
         return today.format(formatter);
     }
 
-
     public static String getName() {
         Faker faker = new Faker(new Locale("ru"));
         return faker.name().lastName() + " " + faker.name().firstName();
