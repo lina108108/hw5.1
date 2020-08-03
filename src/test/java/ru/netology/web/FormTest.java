@@ -18,6 +18,7 @@ import static ru.netology.web.DataGenerator.*;
 
 public class FormTest {
 
+
     private String City = getCity();
     private String Date = getRelevantDate(5);
     private String OtherDate = getRelevantDate(10);
