@@ -46,8 +46,6 @@ public class DataGenerator {
         Faker faker = new Faker(new Locale("ru"));
         return faker.phoneNumber().phoneNumber();
     }
-
-
 }
 
 
